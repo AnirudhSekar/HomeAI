@@ -294,7 +294,7 @@ def plot_analysis(df, xgb_model, X, X_test_scaled, y_test_orig, xgb_test_pred_or
             print(f"Available columns: {df.columns.tolist()}")
             warnings.warn(f"Error generating correlation matrix: {str(e)}")
             plt.close('all')
-        try:
+        """ try:
             # Plot 10: Price vs Bedrooms
             fig10 = plt.figure(figsize=(12, 8))
             plt.scatter(df['beds'], df['listPrice'], alpha=0.5)
@@ -351,7 +351,7 @@ def plot_analysis(df, xgb_model, X, X_test_scaled, y_test_orig, xgb_test_pred_or
         except Exception as e:
             warnings.warn(f"Error generating plots: {str(e)}")
             plt.close('all')
-        # Plot 13: Property Type Distribution
+        # Plot 13: Property Type Distribution"""
         # Plot 13: Property Type Distribution
         try:
             # Get property type columns
